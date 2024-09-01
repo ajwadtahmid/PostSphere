@@ -1,0 +1,18 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/users/update
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  email: mario@mario.com
+  fullName: Mario (Real)
+  link: mario.com
+  bio: I am Mario bitches!
+}

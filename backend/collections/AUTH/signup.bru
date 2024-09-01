@@ -1,0 +1,18 @@
+meta {
+  name: signup
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/api/auth/signup
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  username: mario
+  fullName: Mario
+  password: 12345678
+  email: mario@email.com
+}

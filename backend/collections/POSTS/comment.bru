@@ -1,0 +1,19 @@
+meta {
+  name: comment
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/posts/comment/66aee92f210a70e9f94e1244
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  text: My first comment
+}
+
+body:multipart-form {
+  : 
+}

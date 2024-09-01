@@ -1,0 +1,19 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http://localhost:5000/api/posts/66aee5868d63df29f628221c
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  text: My first post!
+}
+
+body:multipart-form {
+  : 
+}

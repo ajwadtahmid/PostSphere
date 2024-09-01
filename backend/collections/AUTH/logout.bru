@@ -1,0 +1,23 @@
+meta {
+  name: logout
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/auth/logout
+  body: formUrlEncoded
+  auth: none
+}
+
+body:json {
+  {
+    "username": "john12",
+    "password": "12345678"
+  }
+}
+
+body:form-urlencoded {
+  username: mario
+  password: 12345678
+}

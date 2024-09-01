@@ -1,0 +1,19 @@
+meta {
+  name: like - unlike
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/posts/like/66aee92f210a70e9f94e1244
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  text: My first comment
+}
+
+body:multipart-form {
+  : 
+}
